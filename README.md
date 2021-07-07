@@ -46,7 +46,7 @@ Le fichier `.github/workflows/gh-pages.yml` définis les actions effectuées :
   - lance la commande `hugo --minify -e gh-pages -s website` pour générer les fichiers html en précisant qu'il s'agit de l'environnement hugo `gh-pages`
   - déploie le contenu du dossier website/public contenant les fichiers html (générés par la commande précédente) sur github pages
 
-//WIP// À faire :
+Fait :
 - faire une pull request pour merger cette branche dans main et adapter github actions en conséquence
 
 ### Vérification
