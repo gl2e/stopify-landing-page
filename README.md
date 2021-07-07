@@ -33,7 +33,8 @@ find -name hugo.sh | xargs grep "HUGO_VERSION="
 * Si la version indiquée n'est pas la version désirée, la modifier en se rendant à l'addresse indiquée par
 
 find -name hugo.sh
-* Remplacer la valeur inscrite après "HUGO_VERSION=" (avec un éditeur de texte ou la commande sed) par la version voulue (0.85.0)
+
+* Remplacer la valeur inscrite après "HUGO_VERSION=" (avec un éditeur de texte ou la commande sed) par la version voulue
 
 ## Procédure d'Intégration et Déploiement Continu sur GitHub Pages
 L'intégration et le déploiement continus sur `GitHub Pages` sont effectués via github actions.
