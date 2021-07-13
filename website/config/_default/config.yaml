@@ -6,6 +6,6 @@ paginate: 3
 summaryLength: 15
 
 deployment:
-    targets:
-            - name: "stopify-20210713122506145900000001.s3-website.eu-west-3.amazonaws.com"
+        targets:
+                - name: "stopify-20210713122506145900000001.s3-website.eu-west-3.amazonaws.com"
                 URL: "s3://stopify-20210713122506145900000001?region=eu-west-3"
