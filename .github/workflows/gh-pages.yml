@@ -31,6 +31,9 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./website/public
 
+      - name: Définition du dossier de config
+        run: hugo --config config.yaml
+
       - name: Deploy to S3
         run: hugo deploy --force --maxDeletes -1 --invalidateCDN
         env:
