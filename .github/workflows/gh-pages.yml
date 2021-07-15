@@ -3,7 +3,7 @@ name: github pages
 on:
   push:
     branches:
-      - main
+      - faqfromsimplon42
   pull_request:
 
 jobs:
@@ -26,13 +26,8 @@ jobs:
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/faqfromsimplon42'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./website/public
        
-      - name: Deploy to S3
-        run: hugo deploy --force --config=./website/config/_default/config.yaml --themesDir=./website/themes
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.ACCESS_KEY_SECRET }}
