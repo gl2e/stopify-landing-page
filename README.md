@@ -39,7 +39,7 @@ find -name hugo.sh
 ## Procédure d'Intégration et Déploiement Continu sur GitHub Pages
 L'intégration et le déploiement continus sur `GitHub Pages` sont effectués via github actions.
 Le fichier `.github/workflows/gh-pages.yml` définis les actions effectuées :
-- déclenchement du pipeline lors d'un push sur la branche `ci-cd`
+- déclenchement du pipeline lors d'un push sur la branche `main`
 - définition d'un job nommé `deploy` qui :
   - est lancé sur un container unbuntu
   - fait un git checkout
