@@ -24,13 +24,12 @@ jobs:
 
 # Builds chrisjburns.com repo
         - name: Build
-          run: hugo --minify --config=./website/config/s3/configs3.yaml
+          run: hugo --minify -s website --config=./website/config/s3/configs3.yaml
 
 
      # Deploys built website to S3
         - name: Deploy to S3
-          run: hugo deploy --force --maxDeletes -1 --invalidateCDN --config=./website/config/s3/configs3.yaml --themesDir=./website/themes
+          run: hugo deploy --force --maxDeletes -1 --config=./website/config/s3/configs3.yaml --themesDir=./website/themes
           env:
                 AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY_ID }}
                 AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS_KEY }}
-                AWS_REGION: 'eu-west-2'
