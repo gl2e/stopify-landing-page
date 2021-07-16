@@ -24,7 +24,7 @@ jobs:
 
 # Builds chrisjburns.com repo
         - name: Build
-          run: hugo --minify
+          run: hugo --minify --config=./website/config/s3/configs3.yaml
 
 
      # Deploys built website to S3
