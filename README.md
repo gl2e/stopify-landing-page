@@ -74,6 +74,6 @@ Si le FQDN GitHub Pages ne correspond pas à celui configuré comme `baseURL` da
 Changer la propriété `baseURL` pour la valeur correspondant dans le fichier `website/config/gh-pages/config.yml`
 
 ### Monitoring
-Uptime Robot
-Grafana Cloud + Grafana Loki
+Uptime Robot (done)
+Grafana Cloud + Grafana Loki (done)
 Grafana + Prometheus
