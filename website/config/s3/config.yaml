@@ -1,8 +1,8 @@
-baseURL: http://stopify-20210716100926442700000001.s3-website.eu-west-3.amazonaws.com/
+baseURL: http://stopify-20210719114233613600000001.s3-website.eu-west-3.amazonaws.com/
 title: Stopify
 
 deployment:
   targets:
     - name: "stopify-20210716100926442700000001"
-      URL: "s3://stopify-20210716100926442700000001?region=eu-west-3"
+      URL: "s3://stopify-20210719114233613600000001?region=eu-west-3"
 
