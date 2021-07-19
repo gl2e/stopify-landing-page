@@ -75,5 +75,5 @@ Changer la propriété `baseURL` pour la valeur correspondant dans le fichier `w
 
 ### Monitoring
 Uptime Robot (done)
-Grafana Cloud + Grafana Loki (done)
+Grafana Cloud + Grafana Loki (doing)
 Grafana + Prometheus
